@@ -1,0 +1,612 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+ul,li{
+    list-style: none;
+    margin-bottom: 0;
+}
+
+header{
+    background-color: rgb(0,0,0);
+    color: white;
+}
+.menu{
+
+}
+.menu-btn{
+color: #f1f1f1;
+font-size: 24px;
+visibility: hidden;
+
+}
+.head a{
+    font-size: 2.14rem;
+}
+
+.first{
+    background: url(hero_02.jpg);
+    background-size: 640px;
+    background-repeat: no-repeat;
+    background-position: 68% 10%;
+    background-color: black;
+    padding: 70px 30px 0 30px;
+   position:relative;
+   z-index: 1;
+}
+
+.start-btn{
+    width: max-content;
+    border: 2px solid rgb(233, 32, 79);
+    background: none;
+    color: white;
+    padding: 20px 40px;
+}
+.btn-bg{
+    display: inline-block;
+   width: 1px;
+   background-color: #e9204f;
+   transition: all 0.5s ease;
+}
+.btn-bg:hover{
+    width: 190px;
+}
+
+.title{
+font-size: 78px;    
+}
+
+.box1{
+    margin-left: 3rem;
+    padding: 3rem 0;
+}
+
+.mycard{
+    position: relative;
+    padding: 60px 40px;
+    background-color: rgb(27, 27, 27);
+    border-radius: 0 !important;
+    color: white;
+    transition: all 0.5s ease;
+}
+.cardicon{
+    color: #e9204f;
+    transition: all 0.5s ease;
+}
+.mycard:hover{
+    background-color: #e9204f;
+    color: white;
+}
+
+.mycard:hover .cardicon{
+    color: white;
+}
+
+.mycard1{
+    background-color: #e9204f;
+    border-radius: 0 !important;
+    color: white;
+    padding: 60px 40px;
+}
+
+.mycard-bg{
+    position: absolute;
+    width: calc(100% + 20px);
+    height: 70px;
+    background-color: rgb(233, 32, 79);
+    bottom: -20px;
+    left: 0;
+    z-index: -1;
+    transition: all 0.5s ease;
+}
+
+.mycard:hover .mycard-bg{
+    background-color: rgb(184, 26, 63);
+}
+.second{
+    padding: 100px 30px;
+}
+.second div h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.second div p{
+    color: #e9204f;
+}
+.service-element{
+    padding-bottom: 25px;
+}
+.service{
+    position: relative;
+    padding: 40px 30px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.icon{
+    position: absolute;
+    top: 15px;
+    left: -25px;
+    transform: scale(0.5);
+    visibility: hidden;
+    transition: all 0.4s ease;
+    
+}
+
+.icon i{
+    font-size: 68px;
+    color: rgba(243, 243, 243, 0.7);
+    
+}
+.service-title i{
+font-size: 24px;
+}
+.service-title h5{
+    margin: 0;
+}
+.service-title{
+    transition: all 0.4s ease;
+}
+
+.service:hover{
+    background-color: #e9204f;
+}
+
+.service:hover .service-title{
+    padding-left: 56px;
+}
+
+.service:hover .icon{
+    transform: scale(1.1);
+    visibility: visible;
+    left: -10px;
+}
+
+.devider span{
+border-right: 2px solid #e9204f;
+padding: 38px 0;
+}
+
+.third{
+    padding: 100px 30px;
+}
+.third div h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.third div p{
+    color: #e9204f;
+}
+
+.works-btn{
+    
+    padding: 15px 32px;
+   
+    border: 2px solid rgb(233, 32, 79);
+    background: none;
+}
+
+.works-btn-bg{
+    top: 0;
+    left: 0;
+    padding: 28px 0;
+    background-color: #e9204f;
+}
+
+.works-btn:hover + .works-btn-bg{
+    padding: 28px 61px;
+}
+.works-img-1{
+    background-image: url(works1.jpg);
+}
+.works-img-2{
+    background-image: url(works2.jpg);
+}
+.works-img-3{
+    background-image: url(works3.jpg);
+}
+.works-img{
+ background-position: center;
+ background-size: cover;
+ padding-top: 100%;
+ transition: all 0.4s ease;
+ filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+}
+.works-title{
+    position: absolute;
+    left:25%;
+    bottom: 45%;
+    text-align: center;
+color: #f1f1f1;
+visibility: hidden;
+transition: all 0.2s ease;
+}
+.works-img:hover{
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+.works-img:hover + .works-title{
+    left: 30%;
+    visibility: visible;
+}
+.fourth{
+    padding: 100px 30px;
+}
+.fourth h2{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.fourth p{
+    color: #e9204f;
+}
+.about-01{
+   transform: scale(0.3);
+}
+
+.img-title{
+    left: 20px;
+    bottom: 20px;
+    z-index: 1;
+}
+
+.img-layout{
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+.about-img{
+    overflow: hidden;
+    filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+    transition: all 0.4s ease;
+}
+
+.about-img:hover{
+    filter: none;
+}
+
+.about-footer p{
+    color: #747474;
+    line-height: 26px;
+}
+.about-footer h2{
+    color: #1b1b1b;
+    font-size: 22px;
+    letter-spacing: -0.04px;
+    margin-bottom: 40px;
+}
+
+.client-img{
+    position: relative;
+   
+    width: 100%;
+   
+ 
+}
+
+.client-header h2{
+    color: #1B1B1B;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 20px;
+}
+.client-header p{
+    color: #e9204f;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 17px;
+}
+.client-header{
+    margin-bottom: 40px;
+}
+
+.client-body {
+    margin-top: 60px;
+}
+.client-body p{
+    color: #747474;
+    font-size: 20px;
+    line-height: 36px;
+}
+.client-img-bg{
+    position:absolute;
+    right: -20px;
+    bottom: -20px;
+    padding: 70px;
+    background-color: #e9204f;
+    z-index: -1;
+}
+.space{
+    margin-top: 20px;
+}
+
+.sixth h2{
+    color: #1B1B1B;
+    font-size: 58px;
+    margin-bottom: 24px;
+}
+.sixth p{
+    color: #e9204f;
+    font-size: 18px;
+}
+
+.futured-img{
+    position: relative;
+    overflow: hidden;
+}
+
+.news-img-1{
+    background-image: url(news-01.jpg);
+}
+.news-img-2{
+    background-image: url(news-02.jpg);
+}
+.news-img-3{
+    background-image: url(news-03.jpg);
+}
+.news-img{
+   
+   
+   background-position: center;
+   background-size: cover;
+   padding-top: 100%;
+   transition: all 0.4s ease;
+   filter: brightness( 100% ) contrast( 100% ) saturate( 0% ) blur( 0px ) hue-rotate( 0deg );
+   
+}
+
+.news-img:hover{
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+.news-title{
+  position: absolute;
+    left:0;
+    bottom: -15px;
+    text-align: center;
+color: #f1f1f1;
+transition: all 0.4s ease;
+}
+
+.news-title i{
+    visibility: hidden;
+    font-size: 24px;
+    color: #f1f1f1;
+    transition: all 0.2s ease;
+}
+
+.news-img:hover + .news-title{
+    bottom: 12px;
+}
+
+.news-img:hover + .news-title i{
+    visibility: visible;
+}
+
+footer{
+    background-color: #1B1B1B;
+}
+.foot1{
+    padding: 140px 20px;
+}
+footer h2{
+    font-size: 48px;
+    color: white;
+}
+.social-media i{
+    /* position: absolute;
+    top: 20%;
+    left: 25%; */
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+.social-media{
+    /* position: relative; */
+    display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+
+}
+
+.social-media-icons{
+  
+    border: 2px solid #e9204f;
+    border-radius: 50%;
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+
+.fb-icon{
+    /* position: absolute; */
+    left: 0;
+    padding: 0px 5px;
+    
+}
+.twit-icon{
+    /* position: absolute; */
+    left: 58px;
+}
+.inst-icon{
+    /* position: absolute; */
+    left: 116px;
+    padding: 0px 1px;
+}
+.git-icon{
+    /* position: absolute; */
+    left: 174px;
+}
+.icon-pad{
+    margin-bottom: 0px;
+}
+.social-media-icons:hover{
+    margin-bottom: 10px;
+
+}
+.social-media i:hover{
+  color: #e9204f;
+    transform: scale(0.9); 
+}
+.end-btn{
+    width: max-content;
+    border: 2px solid rgb(233, 32, 79);
+    background: none;
+    color: white;
+    padding: 20px 40px;
+}
+.end-btn-bg{
+    left: 0;
+    display: inline-block;
+   width: 1px;
+   background-color: #e9204f;
+   transition: all 0.5s ease;
+}
+.end-btn-bg:hover{
+    width: 205px;
+}
+
+.foot2{
+padding: 40px 30px;
+background-color: #161616;
+}
+.foot2 h3{
+font-size: 20px;
+}
+.foot2 p{
+    font-size: 18px;
+    line-height: 12px;
+}
+.foot2-title:hover{
+    color: #e9204f;
+    cursor: pointer;
+}
+
+.foot3{
+    padding: 30px;
+    background-color: #000000;
+}
+
+.foot3 p{
+    font-size: 12px;
+    margin: 0;
+}
+
+.foot3 ul{
+    font-size: 14px;
+}
+
+.foot3 a:hover{
+    color: #e9204f;
+}
+
+@media(max-width:1024px){
+    .mycard-element{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:1024px){
+.service-element{
+    width: 50%;
+}
+
+}
+@media(max-width:768px){
+    .service-element{
+        width: 100%;
+    }
+    
+    }
+@media(max-width:1024px){
+    .about-element{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+    
+    }
+    @media(max-width:1024px){
+        .client-element{
+            width: 50%;
+        }
+        .client-header{
+            width: 50%;
+        }
+        }
+        @media(max-width:768px){
+            .client-element{
+                width: 100%;
+            }
+            .client-header{
+                width: 100%;
+            }
+            }
+@media(max-width:1024px){
+    .menu-btn{
+            visibility: visible;
+            }
+            .title{
+                font-size: 50px;
+            }
+}
+@media(max-width:1024px){
+    .menu{
+            visibility: hidden;
+            }
+}
+
+@media(max-width:1024px){
+    .img-element {
+        width: 33.333333%;
+        margin-bottom: 15px;
+    }
+    
+    }
+    @media(max-width:1024px){
+        .img-element {
+            width: 50%;
+            margin-bottom: 15px;
+        }
+        
+        }
+
+    @media(max-width:1024px){
+        .foot-element{
+            width: 100%;
+            margin-bottom: 25px;
+        }
+
+        .end-btn-futured{
+            width: 21% !important;
+            margin-bottom: 0px !important;
+        }
+    }
+
+    @media(max-width:1024px){
+        .foot3-element{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        }
